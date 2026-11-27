@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bergembira Music Festival 25, 26, 27 September 2026">
+  <title>Bergembira Music Festival 25, 26, 27 Desember 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="atas">
+
+  <header>
+    <div class="isi header-isi">
+      <a href="index.html" class="logo">
+        <img src="assets/VLogo.png" alt="Logo Bergembira" class="logo-img">
+        Bergembira
+      </a>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="index.html" class="aktif" aria-current="page">HOME</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="profile.html">PROFILE</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero isi" aria-labelledby="judul-hero">
+      <p class="label-kecil">Music Festival 2026</p>
+      <h1 id="judul-hero">Ayo Bergembira!</h1>
+      <p class="hero-tanggal"><time datetime="2026-09-25">25</time> · <time datetime="2026-09-26">26</time> · <time datetime="2026-09-27">27</time> September 2026</p>
+      <div class="aksi-foto">
+        <a class="tombol" href="shop.html">Beli Merchandise</a>
+        <a class="tombol putih" href="gallery.html">Lihat Gallery</a>
+      </div>
+    </section>
+
+    <div class="berjalan" aria-hidden="true"><p>Bergembira</p></div>
+
+    <section class="video-section" aria-labelledby="judul-video">
+      <h2 id="judul-video">Keseruan Bergembira</h2>
+      <div class="video-list">
+
+        <button class="video-card" type="button" data-full="assets/videokonser1.mp4" style="--warna:#0e9e8e; --miring:-2deg">
+          <video src="assets/videokonser1.mp4" muted loop autoplay playsinline preload="metadata" aria-hidden="true"></video>
+          <span class="label">Hari 1</span>
+          <span class="play" aria-hidden="true">▶</span>
+          <time class="tanggal" datetime="2026-09-25">25 Sep 2026</time>
+          <span class="sr-only">Putar video lengkap Hari 1</span>
+        </button>
+
+        <button class="video-card" type="button" data-full="assets/videokonser2.mp4" style="--warna:#ff4f9a; --miring:1deg">
+          <video src="assets/videokonser2.mp4" muted loop autoplay playsinline preload="metadata" aria-hidden="true"></video>
+          <span class="label">Hari 2</span>
+          <span class="play" aria-hidden="true">▶</span>
+          <time class="tanggal" datetime="2026-09-26">26 Sep 2026</time>
+          <span class="sr-only">Putar video lengkap Hari 2</span>
+        </button>
+
+        <button class="video-card" type="button" data-full="assets/videokonser3.mp4" style="--warna:#7b6fd6; --miring:2deg">
+          <video src="assets/videokonser3.mp4" muted loop autoplay playsinline preload="metadata" aria-hidden="true"></video>
+          <span class="label">Hari 3</span>
+          <span class="play" aria-hidden="true">▶</span>
+          <time class="tanggal" datetime="2026-09-27">27 Sep 2026</time>
+          <span class="sr-only">Putar video lengkap Hari 3</span>
+        </button>
+
+      </div>
+    </section>
+
+    <div class="berjalan" aria-hidden="true"><p>Gembira Bareng</p></div>
+
+    <!-- 3. FOTO -->
+    <section class="foto-section" aria-labelledby="judul-foto">
+      <h2 id="judul-foto">Momen Bergembira</h2>
+
+      <div class="photo-list">
+        <a href="gallery.html" class="photo-card" style="--warna:#0e9e8e; --miring:-2deg">
+          <img src="assets/konser1.jpg" alt="Dokumentasi konser Hari 1" loading="lazy">
+          <span class="label">Hari 1</span>
+          <span class="zoom-icon" aria-hidden="true">↗</span>
+          <time class="tanggal" datetime="2026-09-25">25 Sep 2026</time>
+        </a>
+        <a href="gallery.html" class="photo-card" style="--warna:#ff4f9a; --miring:1deg">
+          <img src="assets/konser2.jpg" alt="Dokumentasi konser Hari 2" loading="lazy">
+          <span class="label">Hari 2</span>
+          <span class="zoom-icon" aria-hidden="true">↗</span>
+          <time class="tanggal" datetime="2026-09-26">26 Sep 2026</time>
+        </a>
+        <a href="gallery.html" class="photo-card" style="--warna:#7b6fd6; --miring:2deg">
+          <img src="assets/konser3.jpg" alt="Dokumentasi konser Hari 3" loading="lazy">
+          <span class="label">Hari 3</span>
+          <span class="zoom-icon" aria-hidden="true">↗</span>
+          <time class="tanggal" datetime="2026-09-27">27 Sep 2026</time>
+        </a>
+      </div>
+
+      <h3 class="sub-judul">Foto dari pengunjung</h3>
+      <div class="aksi-foto">
+        <button type="button" class="tombol" id="tombolUpload">Submit Foto Kamu</button>
+        <input type="file" id="fotoInput" accept="image/*" multiple hidden>
+        <a class="tombol putih" href="gallery.html">Lihat Semua Foto</a>
+      </div>
+      <p id="fotoPesan" class="pesan" role="status" aria-live="polite"></p>
+      <div class="foto-list" data-batas="4"></div>
+    </section>
+
+    <div class="berjalan" aria-hidden="true"><p>Sampai Jumpa Lagi</p></div>
+
+    <!-- Dialog untuk video dan untuk foto -->
+    <dialog id="videoDialog" aria-label="Pemutar video">
+      <video controls playsinline></video>
+    </dialog>
+    <dialog id="fotoDialog" aria-label="Foto diperbesar">
+      <img src="" alt="">
+    </dialog>
+  </main>
+
+  <footer class="footer-besar">
+    <div class="isi">
+      <nav class="footer-link" aria-label="Tautan footer">
+        <a href="profile.html">About</a>
+        <a href="mailto:bergembira@gmail.com">Contact Us</a>
+        <a href="#sponsor">Sponsor &amp; Partners</a>
+      </nav>
+      <ul class="sosmed" aria-label="Media sosial">
+        <li><a href="https://www.instagram.com/veterantechupnvj/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a></li>
+      </ul>
+      <div class="sponsor" id="sponsor">
+        <h2>Sponsored by</h2>
+        <p class="placeholder-logo">
+          <img src="assets/vtech.jpeg" alt="Logo Sponsor 1">
+        </p>
+        <h2>Promoted by</h2>
+        <p class="placeholder-logo">
+          <img src="assets/upnvj.png" alt="Logo Promotor 1">
+        </p>
+      </div>
+      <p class="hak-cipta">&copy; 2026 Bergembira Music Festival. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

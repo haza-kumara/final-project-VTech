@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Bergembira Music Festival</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="atas">
+  <header>
+    <div class="isi header-isi">
+      <a href="index.html" class="logo">
+        <img src="assets/VLogo.png" alt="Logo Bergembira" class="logo-img">
+        Bergembira
+      </a>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="shop.html" class="aktif" aria-current="page">SHOP</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="profile.html">PROFILE</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="halaman isi" aria-labelledby="judul-shop">
+      <div class="judul-baris">
+        <div>
+          <h1 id="judul-shop">Merchandise</h1>
+          <p>Bawa pulang rasa gembiranya.</p>
+        </div>
+        <button type="button" class="tombol" id="bukaKeranjang">Keranjang (<span id="jumlahKeranjang">0</span>)</button>
+      </div>
+      <div class="produk-list" id="produkList"></div>
+    </section>
+
+    <dialog id="keranjangDialog" class="panel" aria-labelledby="judul-keranjang">
+      <h2 id="judul-keranjang">Keranjang belanja</h2>
+      <ul id="itemKeranjang" class="item-keranjang"></ul>
+      <p class="total">Total: <strong id="totalHarga">Rp0</strong></p>
+      <form id="formCheckout" novalidate>
+        <label for="coNama">Nama penerima</label>
+        <input id="coNama" type="text" autocomplete="name">
+        <label for="coAlamat">Alamat pengiriman</label>
+        <textarea id="coAlamat" rows="3" autocomplete="street-address"></textarea>
+        <p id="coPesan" class="pesan" role="status" aria-live="polite"></p>
+        <div class="aksi-foto">
+          <button type="submit" class="tombol">Pesan sekarang</button>
+          <button type="button" class="tombol putih" id="tutupKeranjang">Tutup</button>
+        </div>
+      </form>
+    </dialog>
+  </main>
+  <footer>
+    <div class="isi footer-isi">
+      <p>&copy; 2026 Bergembira Music Festival. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

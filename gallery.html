@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Bergembira Music Festival</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="atas">
+  <header>
+    <div class="isi header-isi">
+      <a href="index.html" class="logo">
+        <img src="assets/VLogo.png" alt="Logo Bergembira" class="logo-img">
+        Bergembira
+      </a>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="gallery.html" class="aktif" aria-current="page">GALLERY</a></li>
+          <li><a href="profile.html">PROFILE</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="halaman isi" aria-labelledby="judul-gallery">
+      <h1 id="judul-gallery">Gallery Bergembira</h1>
+      <p>Bagikan momen serumu. Pilih satu atau beberapa foto, lalu langsung tampil di sini.</p>
+      <div class="aksi-foto">
+        <button type="button" class="tombol" id="tombolUpload">Upload Foto</button>
+        <input type="file" id="fotoInput" accept="image/*" multiple hidden>
+      </div>
+      <p id="fotoPesan" class="pesan" role="status" aria-live="polite"></p>
+      <div class="foto-list" data-hapus="ya"></div>
+    </section>
+
+    <dialog id="fotoDialog" aria-label="Foto diperbesar">
+      <img src="" alt="">
+    </dialog>
+  </main>
+  <footer>
+    <div class="isi footer-isi">
+      <p>&copy; 2026 Bergembira Music Festival. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
